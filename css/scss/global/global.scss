@@ -1,0 +1,271 @@
+
+
+
+
+.Banner {
+  position: relative;
+  z-index: 9;
+
+
+  &-in {
+    position: relative;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      transition: 500ms;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 75%;
+      height: 100%;
+      background-image: linear-gradient(to right, #464355 0%, rgba(138, 124, 207, 0) 100%);
+    }
+  }
+
+  &-text {
+    padding-right: 120px;
+    width: 100%;
+
+    h6 {
+      font-size: 36px;
+      font-weight: 600;
+      letter-spacing: 0.09px;
+      color: #ffffff;
+    }
+
+    h1 {
+      font-size: 4vw;
+      font-weight: 600;
+      letter-spacing: 0.18px;
+      color: white;
+    }
+
+    span {
+      opacity: 0.84;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.4;
+      letter-spacing: 0.05px;
+      color: white;
+    }
+
+    p {
+      max-width: 550px;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.23px;
+      color: white;
+      line-height: normal;
+    }
+  }
+
+
+
+
+
+
+}
+
+
+.buton {
+  position: relative;
+  width: 214px;
+  height: 66px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 500ms;
+  z-index: 1;
+  cursor: pointer;
+  line-height: 1.2;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2.6px;
+  color: #000000;
+
+  &:hover {
+
+    transition: 500ms;
+  }
+
+
+}
+
+
+.lv_skin {
+  canvas {
+    opacity: 0 !important;
+  }
+}
+
+
+.nohover {
+  pointer-events: none;
+}
+
+
+.mobile {
+  display: none !important;
+}
+
+.scroll {
+  bottom: 10vh;
+  z-index: 99;
+  position: absolute;
+  left: 40%;
+  display: flex;
+  align-items: center;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    transition: 500ms;
+    width: 1px;
+    height: 56px;
+    background-color: #ffffff;
+    margin-right: 24px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 4.9px;
+    color: #ffffff;
+    margin-left: 12px;
+  }
+
+  span {
+    display: block;
+    width: 2px;
+    left: 38px;
+    height: 8px;
+    border-radius: 4px;
+    background: $yellow;
+    border: 1px solid transparent;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+  }
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(18px);
+    transform: translateY(18px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(18px);
+    -ms-transform: translateY(18px);
+    transform: translateY(18px);
+  }
+}
+
+.global_link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+
+
+body {
+  font-family: $font-family-G;
+
+  i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    &:before {
+      content: "";
+      display: inline-block;
+      margin-left: 0 !important;
+    }
+  }
+
+  .container {
+    max-width: 1700px;
+    padding-left: 45px;
+    padding-right: 45px;
+
+  }
+
+
+}
+
+
+@font-face {
+  font-family: 'gilroy';
+  src: url(../font/gilroy/Gilroy-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'gilroy';
+  src: url(../font/gilroy/Gilroy-Regular.ttf);
+  font-weight: normal;
+}
+
+
+@font-face {
+  font-family: 'gilroy';
+  src: url(../font/gilroy/Gilroy-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'gilroy';
+  src: url(../font/gilroy/Gilroy-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'gilroy';
+  src: url(../font/gilroy/Gilroy-ExtraBold.ttf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'gilroy';
+  src: url(../font/gilroy/Gilroy-Black.ttf);
+  font-weight: 900;
+}
+
+.slick-slide:focus {
+  outline: none;
+}
+
+
+.mobile-f {
+  display: none !important;
+}
+
+.desktop {
+  display: block;
+}
